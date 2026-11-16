@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>청첩장 | 신랑 이름 ♥ 신부 이름</title>
+  <meta name="description" content="신랑 이름과 신부 이름의 결혼식에 초대합니다.">
+  <meta property="og:title" content="신랑 이름 ♥ 신부 이름 결혼합니다">
+  <meta property="og:image" content="image/05-hero.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Noto+Serif+KR:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <div class="app">
+
+    <!-- 표지 -->
+    <header class="hero">
+      <img class="hero__img" src="image/05-hero.png" alt="손을 잡고 나란히 선 신랑과 신부" width="1024" height="1536">
+      <div class="hero__text">
+        <p class="eyebrow">WEDDING INVITATION</p>
+        <h1>신랑 이름 <span class="heart" aria-hidden="true">♥</span> 신부 이름</h1>
+        <p class="hero__date">2027년 5월 22일 토요일 오후 2시<br>웨딩 메르디앙</p>
+      </div>
+      <a class="hero__scroll" href="#greeting" aria-label="아래로 스크롤"><span></span></a>
+    </header>
+
+    <!-- 네비게이션 -->
+    <nav class="nav" aria-label="섹션 바로가기">
+      <ul>
+        <li><a href="#greeting">인사말</a></li>
+        <li><a href="#couple">신랑·신부</a></li>
+        <li><a href="#gallery">갤러리</a></li>
+        <li><a href="#info">예식 안내</a></li>
+        <li><a href="#location">오시는 길</a></li>
+        <li><a href="#account">마음 전하실 곳</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- 인사말 -->
+      <section id="greeting" class="section reveal">
+        <h2>초대합니다</h2>
+        <img class="photo photo--tall" src="image/03-couple-full.png" alt="나란히 서 있는 신랑과 신부의 전신 사진" loading="lazy">
+        <p class="poem">
+          서로 다른 두 사람이 만나<br>
+          하나의 길을 걸어가려 합니다.<br><br>
+          저희의 첫걸음을 함께 하시어<br>
+          따뜻한 축복으로 자리를 빛내 주세요.
+        </p>
+        <p class="parents">
+          신랑 부친 <b>OOO</b> · 모친 <b>OOO</b>의 아들 <b>신랑 이름</b><br>
+          신부 부친 <b>OOO</b> · 모친 <b>OOO</b>의 딸 <b>신부 이름</b>
+        </p>
+      </section>
+
+      <!-- 신랑·신부 -->
+      <section id="couple" class="section section--alt reveal">
+        <h2>신랑 &amp; 신부</h2>
+        <div class="couple">
+          <figure>
+            <img class="photo" src="image/01-groom.png" alt="신랑 프로필 사진" loading="lazy">
+            <figcaption>
+              <strong>신랑 이름</strong>
+              <span class="caption">OOO · OOO의 아들</span>
+              <a class="btn btn--outline" href="tel:010-0000-0000">연락하기</a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img class="photo" src="image/02-bride.png" alt="신부 프로필 사진" loading="lazy">
+            <figcaption>
+              <strong>신부 이름</strong>
+              <span class="caption">OOO · OOO의 딸</span>
+              <a class="btn btn--outline" href="tel:010-0000-0000">연락하기</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 갤러리 -->
+      <section id="gallery" class="section reveal">
+        <h2>우리의 순간들</h2>
+        <div class="gallery">
+          <button type="button" class="gallery__item"><img src="image/04-couple-close.png" alt="가까이 마주한 신랑과 신부" loading="lazy"></button>
+          <button type="button" class="gallery__item"><img src="image/06-walking.png" alt="함께 걷는 신랑과 신부" loading="lazy"></button>
+          <button type="button" class="gallery__item gallery__item--wide"><img src="image/07-rings.png" alt="서로 손을 맞잡은 두 사람의 반지" loading="lazy"></button>
+        </div>
+      </section>
+
+      <!-- 예식 안내 -->
+      <section id="info" class="section section--alt reveal">
+        <h2>예식 안내</h2>
+        <img class="photo photo--banner" src="image/07-rings.png" alt="" loading="lazy">
+        <p class="dday" data-date="2027-05-22" aria-live="polite"></p>
+        <dl class="info">
+          <div><dt>일시</dt><dd>2027년 5월 22일 토요일 오후 2시</dd></div>
+          <div><dt>장소</dt><dd>웨딩 메르디앙 O층 OO홀</dd></div>
+          <div><dt>식사</dt><dd>예식 후 연회장에서 식사가 준비되어 있습니다.</dd></div>
+          <div><dt>화환</dt><dd>마음만 감사히 받겠습니다.</dd></div>
+        </dl>
+        <a class="btn btn--outline" href="#" id="calendar-link" download="wedding.ics">캘린더에 추가</a>
+      </section>
+
+      <!-- 오시는 길 -->
+      <section id="location" class="section reveal">
+        <h2>오시는 길</h2>
+        <div class="map">
+          <iframe
+            title="웨딩 메르디앙 위치 지도"
+            src="https://maps.google.com/maps?q=%EB%8C%80%EA%B5%AC%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%B6%81%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%8C%80%EB%A1%9C%20581&hl=ko&z=16&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+        <p class="address"><b>웨딩 메르디앙</b><br>대구광역시 북구 중앙대로 581</p>
+        <div class="btn-row">
+          <a class="btn btn--outline" href="https://map.naver.com/p/search/%EB%8C%80%EA%B5%AC%20%EC%9B%A8%EB%94%A9%EB%A9%94%EB%A5%B4%EB%94%94%EC%95%99" target="_blank" rel="noopener">네이버지도</a>
+          <a class="btn btn--outline" href="https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%9B%A8%EB%94%A9%EB%A9%94%EB%A5%B4%EB%94%94%EC%95%99" target="_blank" rel="noopener">카카오맵</a>
+          <a class="btn btn--outline" href="https://www.google.com/maps/search/?api=1&query=%EB%8C%80%EA%B5%AC%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%B6%81%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%8C%80%EB%A1%9C%20581" target="_blank" rel="noopener">구글지도</a>
+        </div>
+        <dl class="transport">
+          <div><dt>지하철</dt><dd>O호선 OO역 O번 출구 도보 5분</dd></div>
+          <div><dt>버스</dt><dd>OO번, OO번 웨딩 메르디앙 앞 하차</dd></div>
+          <div><dt>자가용</dt><dd>내비게이션에 "웨딩 메르디앙" 검색 · 건물 내 주차장 이용 (3시간 무료)</dd></div>
+        </dl>
+      </section>
+
+      <!-- 마음 전하실 곳 -->
+      <section id="account" class="section section--alt reveal">
+        <h2>마음 전하실 곳</h2>
+        <p class="poem poem--small">참석이 어려우신 분들을 위해<br>계좌번호를 안내드립니다.</p>
+        <details class="account">
+          <summary>신랑측 계좌번호</summary>
+          <ul>
+            <li><span>신랑 이름</span><span class="num">OO은행 000-000-000000</span><button type="button" class="btn btn--fill" data-copy="000-000-000000">복사</button></li>
+            <li><span>부친 OOO</span><span class="num">OO은행 000-000-000000</span><button type="button" class="btn btn--fill" data-copy="000-000-000000">복사</button></li>
+          </ul>
+        </details>
+        <details class="account">
+          <summary>신부측 계좌번호</summary>
+          <ul>
+            <li><span>신부 이름</span><span class="num">OO은행 000-000-000000</span><button type="button" class="btn btn--fill" data-copy="000-000-000000">복사</button></li>
+            <li><span>부친 OOO</span><span class="num">OO은행 000-000-000000</span><button type="button" class="btn btn--fill" data-copy="000-000-000000">복사</button></li>
+          </ul>
+        </details>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__thanks">함께해 주셔서 감사합니다</p>
+      <p class="footer__names">신랑 이름 · 신부 이름</p>
+      <div class="btn-row">
+        <button type="button" class="btn btn--outline" id="share-btn">링크 공유하기</button>
+        <a class="btn btn--outline" href="#top">맨 위로</a>
+      </div>
+      <p class="copyright">© 2027 신랑 이름 &amp; 신부 이름</p>
+    </footer>
+  </div>
+
+  <!-- 라이트박스 -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="사진 크게 보기" hidden>
+    <button type="button" class="lightbox__close" aria-label="닫기">×</button>
+    <button type="button" class="lightbox__nav lightbox__prev" aria-label="이전 사진">‹</button>
+    <img class="lightbox__img" src="" alt="">
+    <button type="button" class="lightbox__nav lightbox__next" aria-label="다음 사진">›</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
